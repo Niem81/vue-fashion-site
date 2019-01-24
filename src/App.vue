@@ -1,10 +1,22 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div class="container">
+    <mainMenu>
+      <btn btnColor="btn btn-small btn-info btn-popup"
+         :cartIcon="true"
+         @click.native="showPopupCart()">
+         Cart
+        <span class="btn-circle" v-if="hasProduct()">
+           {{ getProductsInCart.length }}
+        </span>
+      </btn>
+      <transition name="appear">
+        <popupcart class="cart" v-if="getPopupCart"/>
+      </transition>
+    </mainMenu>
+    <transition name="leave">
+      <router-view></router-view>
+    </transition>
+    <maskBg v-if="getPopupCart" @click.native="showPopupCart()"/>
   </div>
 </template>
 
