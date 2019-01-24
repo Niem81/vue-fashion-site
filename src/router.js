@@ -26,5 +26,10 @@ export default new Router({
       name: 'style-clothes',
       component: Clothes,
     },
+    {
+      path: '/checkout',
+      name: 'cart-checkout',
+      component: CartCheckout,
+    },
   ],
 });
