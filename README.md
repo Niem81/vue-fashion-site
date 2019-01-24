@@ -1,6 +1,8 @@
-# fashion-site
+# Vue-fashion-site
 
-## Project setup
+Fashion Site built with VueJS and Node.js
+
+## Default Project setup
 ```
 npm install
 ```
