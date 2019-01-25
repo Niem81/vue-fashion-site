@@ -2,7 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
 import Clothes from './views/Clothes.vue';
-import CartCheckout from './views/CartCheckout';
+// import CartCheckout from './views/CartCheckout';
 
 Vue.use(Router);
 
@@ -26,10 +26,10 @@ export default new Router({
       name: 'style-clothes',
       component: Clothes,
     },
-    {
-      path: '/checkout',
-      name: 'cart-checkout',
-      component: CartCheckout,
-    },
+    // {
+    //   path: '/checkout',
+    //   name: 'cart-checkout',
+    //   component: CartCheckout,
+    // },
   ],
 });

@@ -11,9 +11,9 @@
         <li class="link">
           <router-link to="/clothes">Clothes</router-link>
         </li>
-        <li class="link">
+        <!-- <li class="link">
           <router-link to="/selected">Selected</router-link>
-        </li>
+        </li> -->
       </ul>
     </nav>
   </header>
