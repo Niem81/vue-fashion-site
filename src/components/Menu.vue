@@ -15,11 +15,14 @@
           <router-link to="/selected">Selected</router-link>
         </li> -->
       </ul>
+      <search-bar></search-bar>
     </nav>
   </header>
 </template>
 
 <script>
+import SearchBar from './SearchBar';
+
 export default {
 }
 </script>
