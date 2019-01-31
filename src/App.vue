@@ -12,32 +12,32 @@
 </template>
 
 <script>
-import {mapGetters, mapActions} from 'vuex';
-import mainMenu from './components/Menu';
-import btn from './components/Btn';
+import { mapGetters, mapActions } from 'vuex';
+import mainMenu from '@/components/Menu.vue';
+import btn from '@/components/Btn.vue';
 
 export default {
-    components: {
-      mainMenu,
-      btn,
+  components: {
+    mainMenu,
+    btn,
+  },
+  methods: {
+    ...mapActions([
+      'showOrHiddenPopupCart',
+    ]),
+    hasProduct() {
+      return this.getProductsInCart.length > 0;
     },
-    methods: {
-      ...mapActions([
-        'showOrHiddenPopupCart',
-      ]),
-      hasProduct() {
-        return this.getProductsInCart.length > 0;
-      },
-      showPopupCart() {
-        this.showOrHiddenPopupCart();
-      }
+    showPopupCart() {
+      this.showOrHiddenPopupCart();
     },
-    computed: {
-      ...mapGetters([
-        'getProductsInCart',
-        'getPopupCart'
-      ])
-    }
+  },
+  computed: {
+    ...mapGetters([
+      'getProductsInCart',
+      'getPopupCart',
+    ]),
+  },
 };
 
 </script>

@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from './views/Home.vue';
-import Clothes from './views/Clothes.vue';
-import Garment from './views/Garment.vue';
+import Home from '@/views/Home.vue';
+import Clothes from '@/views/Clothes.vue';
+import Garment from '@/views/Garment.vue';
 // import CartCheckout from './views/CartCheckout';
 
 Vue.use(Router);

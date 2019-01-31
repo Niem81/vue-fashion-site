@@ -11,20 +11,22 @@
         <li class="link">
           <router-link to="/clothes">Clothes</router-link>
         </li>
-        <!-- <li class="link">
-          <router-link to="/selected">Selected</router-link>
-        </li> -->
+        <li class="link">
+          <searchBar></searchBar>
+        </li>
       </ul>
-      <search-bar></search-bar>
     </nav>
   </header>
 </template>
 
 <script>
-import SearchBar from './SearchBar';
+import searchBar from './SearchBar.vue';
 
 export default {
-}
+  components: {
+    searchBar,
+  },
+};
 </script>
 
 <style scoped>
