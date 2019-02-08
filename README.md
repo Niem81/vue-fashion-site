@@ -2,6 +2,12 @@
 
 Fashion Site built with VueJS and Node.js
 
+## Applying the following modules
+- Admin Module
+- Product Module
+- Blog Module
+- E-Commerce Module
+
 ## Default Project setup
 ```
 npm install

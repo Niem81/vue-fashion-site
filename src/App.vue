@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="">
     <mainMenu>
       <btn btnColor="btn btn-small btn-info btn-popup">
          Cart
