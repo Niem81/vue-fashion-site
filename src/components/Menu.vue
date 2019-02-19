@@ -14,6 +14,9 @@
         <li class="link">
           <searchBar></searchBar>
         </li>
+        <li class="link">
+          <router-link to="/login">Sign In</router-link>
+        </li>
       </ul>
     </nav>
   </header>
